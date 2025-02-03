@@ -47,7 +47,7 @@ fn benchmark<'a>(
     use iced_winit::core;
     use iced_winit::runtime;
 
-    let instance = wgpu::Instance::new(wgpu::InstanceDescriptor {
+    let instance = wgpu::Instance::new(&wgpu::InstanceDescriptor {
         backends: wgpu::Backends::all(),
         ..Default::default()
     });
